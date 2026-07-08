@@ -11,6 +11,13 @@
             padding: 0;
             font-family: sans-serif;
         }
+        .wrapper{
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 2px solid #000000;
+            
+        }
         .one, .two, .three, .four{
            padding: 20px;
            text-align: center;
@@ -21,40 +28,39 @@
 
         .one{
             background-color: #ff0000;
-            font-size: 48px;
+            flex-grow:1;
+         
         }
         .two{
             background-color: #8dff8d;
-            font-size: 68px;
+            flex-grow:3;
+         
         }
         .three{
             background-color: #0000ff;
-            font-size: 30px;
+            flex-grow:5;
         }
         .four{
             background-color: #ffff00;
-            font-size: 25px;
+           flex-grow:7;
         }
 
         .flexiblbox{
-            border: 2px solid #000000;
             display: flex;
-            height: 200px;
-            align-items: flex-start;
-            align-items: flex-end;
-            align-items: center;
-            align-items: stretch;
-            align-items: baseline;
+     
         }
     </style>
 </head>
 <body>
+<div class="wrapper">
     <div class="flexiblbox">
         <p class="one">a</p>
         <p class="two">b</p>
         <p class="three">c</p>
         <p class="four">d</p>
     </div>
+</div>
+
 
    
 
